@@ -1,15 +1,16 @@
 import sys
 
+if len(sys.argv) == 2:
+    temp = sys.argv[1]      
+else:
+    temp = "25"           
 
-if len(sys.argv) != 2:
-    print("Usage: python temperature_check.py <temperature_in_Celsius>")
-    sys.exit(1)
+temp = int(temp)            
+print(f"Temperature: {temp}")
 
-temperature = float(sys.argv[1])
-
-if temperature < 15:
+if temp < 15:
     print("Cold")
-elif 15 <= temperature <= 30:
+elif temp >= 15 and temp <= 30:
     print("Normal")
 else:
     print("Hot")
