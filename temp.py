@@ -14,4 +14,3 @@ elif temp >= 15 and temp <= 30:
     print("Normal")
 else:
     print("Hot")
-
