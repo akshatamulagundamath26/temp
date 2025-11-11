@@ -14,5 +14,5 @@ if temperature < 15:
 elif 15 <= temperature <= 30:
     print("Normal")
 else:
-    print("Hot")
-    print("Hot")
+    print("Hot")
+
